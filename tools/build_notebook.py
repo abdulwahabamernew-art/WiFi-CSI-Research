@@ -30,7 +30,7 @@ def build() -> None:
         nbf.v4.new_markdown_cell(
             "## 1. الإعداد والتخزين المستمر\n\n"
             "في Colab سيظهر طلب واحد لربط Google Drive. البيانات والنتائج تحفظ تحت "
-            "`MyDrive/WiFiVision` كي لا تضيع بانتهاء الجلسة. خارج Colab يستخدم الدفتر مجلد المشروع الحالي."
+            "`MyDrive/WiFi-CSI-Research` كي لا تضيع بانتهاء الجلسة. خارج Colab يستخدم الدفتر مجلد المشروع الحالي."
         ),
         nbf.v4.new_code_cell(
             "import importlib.util, subprocess, sys, os\n"
@@ -47,7 +47,7 @@ def build() -> None:
             "if IN_COLAB:\n"
             "    from google.colab import drive\n"
             "    drive.mount('/content/drive')\n"
-            "    RUN_ROOT = Path('/content/drive/MyDrive/WiFiVision')\n"
+            "    RUN_ROOT = Path('/content/drive/MyDrive/WiFi-CSI-Research')\n"
             "else:\n"
             "    RUN_ROOT = Path.cwd()\n"
             "RUN_ROOT.mkdir(parents=True, exist_ok=True)\n"
