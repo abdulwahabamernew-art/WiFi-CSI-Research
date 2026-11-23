@@ -1,0 +1,48 @@
+{
+  "task": "single-person absolute 3D joint regression",
+  "split": "S11+S21 train; temporal in-domain test on S11+S21; capture-group holdout on S51",
+  "n_train": 100,
+  "n_features": 1350,
+  "capture_groups_train": [
+    "S11",
+    "S21"
+  ],
+  "in_domain_temporal": {
+    "n": 100,
+    "groups": [
+      "S11",
+      "S21"
+    ],
+    "ridge_mpjpe_mm": 879.2723852990772,
+    "mean_pose_mpjpe_mm": 927.9954036890443,
+    "ridge_root_relative_mpjpe_mm": 176.80810514878834,
+    "mean_pose_root_relative_mpjpe_mm": 143.84076608929206
+  },
+  "heldout_capture_group": {
+    "n": 50,
+    "groups": [
+      "S51"
+    ],
+    "ridge_mpjpe_mm": 1365.6700435372263,
+    "mean_pose_mpjpe_mm": 994.4996939102209,
+    "ridge_root_relative_mpjpe_mm": 268.45630647181787,
+    "mean_pose_root_relative_mpjpe_mm": 156.43627946660084
+  },
+  "per_joint_error_mm": {
+    "neck": 1372.227,
+    "head": 1375.35,
+    "L shoulder": 1383.199,
+    "R shoulder": 1347.998,
+    "L elbow": 1371.548,
+    "L hip": 1333.665,
+    "R elbow": 1416.528,
+    "R hip": 1333.398,
+    "L hand": 1342.693,
+    "L knee": 1275.88,
+    "R hand": 1677.434,
+    "R knee": 1277.547,
+    "L ankle": 1270.078,
+    "R ankle": 1341.836
+  },
+  "important_limit": "This is a tiny engineering baseline on a capture-group holdout, not a reproduction of the paper and not a subject-disjoint benchmark."
+}

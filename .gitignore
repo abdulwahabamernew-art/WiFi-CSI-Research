@@ -1,0 +1,10 @@
+.venv/
+data/
+references/
+artifacts/notebook_run/
+artifacts/notebook_preview/
+notebooks/artifacts/
+__pycache__/
+*.pyc
+.pytest_cache/
+
